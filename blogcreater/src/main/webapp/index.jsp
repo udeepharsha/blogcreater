@@ -6,6 +6,6 @@
 	<title></title>
 </head>
 <body>
-Hello world 123
+Hello world
 </body>
 </html>
