@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\udeep\Documents\workspace-sts-3.7.3.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+62267557.index
