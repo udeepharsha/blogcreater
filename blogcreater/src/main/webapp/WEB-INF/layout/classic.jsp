@@ -5,7 +5,13 @@
 <html>
 <head>
 
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+
+<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
+
+<tilesx:useAttribute name="current"/>
+
+
 
 <link rel="stylesheet"
 	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -37,13 +43,12 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href='<spring:url value="/" />'>Java Blog Creater</a>
+				<a class="navbar-brand" href='<spring:url value="/" />'>JBC</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href='<spring:url value="/" />'>Home</a></li>
-					<li><a href=<spring:url value="/users.html" />>Users</a></li>
-					<li><a href="#">Contact</a></li>
+					<li class="${current == 'index' ? 'active' : ''}"><a href='<spring:url value="/" />'>Home</a></li>
+					<li class="${current == 'users' ? 'active' : ''}"><a href=<spring:url value="/users.html" />>Users</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
